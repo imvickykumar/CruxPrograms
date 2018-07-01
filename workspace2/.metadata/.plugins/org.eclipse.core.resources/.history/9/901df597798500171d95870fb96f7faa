@@ -1,0 +1,26 @@
+package fibo;
+
+import java.util.Scanner;
+
+public class fibon {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s=new Scanner(System.in);
+		System.out.println("enter n");
+		int n=s.nextInt();
+		int sum=0;
+		int b=1;
+		int i;
+		
+		while(i<n){
+			sum=sum+b;
+			b=i;
+			i++;
+			
+		
+		
+
+	}
+
+}

@@ -1,0 +1,11 @@
+
+public class dfgh {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("vicky");
+		return 0;
+
+	}
+
+}
