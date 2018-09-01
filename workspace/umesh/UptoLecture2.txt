@@ -1,0 +1,51 @@
+Lecture 1:
+all video done. video 00010 is not complete.
+telegraph
+kitkat
+material design etc
+Log Tag sms verbose gradle etc
+gradle wear multiple apps
+google cloud platform helps to build android studio without using android studio.
+gradle properties to change to speed up gradle build in case large size file.
+Try not to name the project in numericals.
+alpha versions means it can have some crashes whereas beta version means it has very few crashes
+so it can be used. Basically they are for testing your app or android version.
+so right now android 8 in beta is for testing purpose.
+
+Lecture 2:
+all video done.
+developer options,specific country language xml. Values/String.xml files hardcoded.
+DRY concepts Do not Repeat Yourself.
+Material pallete website for color changing and app demos it give about how your app looks on that color.
+MVP=minimal viable product. Means minimum thing that app requires. e.g. uber only for riding and location 
+but now coupons and sells etc.
+View and ViewGroups in XML.
+Types of ViewGroup=Linearlayout,framelayout-ext>like stack,
+relative layout , constraint layout, coordinate layout.
+In relative layout only use marginleft of that view. such left right relative margin wont work in any other layouts.
+alpha means just new release in build.gradle file. so change it to 27.1.1
+so it just gives warning and not error as redline under that after syncing. 
+You can have width and height attribute in that view group so that match parent will cover only that exact phone space.
+we use dp instead of px, bcoz of button size shrinks on high resolution phones or screen.also since dp take care of itself by modifying itself in high resolution screen.
+sp on another hand is used to check for only font size that also when you are trying to increase the font size so that only font size increases and not the buttons. sp increases automatically as you increase the font size without altering the buttons.
+AlignparentTop is the attribute of relative layout view group. it wont work in any other view groups. this align with parent means the main screen and with it on the top
+so marginparenttop means its also in margin with the top parent screen.
+Margin and Padding. padding is with its own bottonBorders whereas margin is with main full screen border or parent distance from button borders.
+Also padding only works on wrap-content.
+Android Activity lifecycle example like onCreate,onResume,onDestroy,onRestart etc. they are the flow and how 
+our activity or app works on performing different physical commands.
+Activity/Fragments probably same.
+Some activities runs on background even after closing the app,e.g like music . it is bcoz of service.
+onclick is attributes of button which takes a method to be made in java MainActivity.
+For buttons Method argument should be View view and also it should be like"public void increment(View view)".
+In static there is no object assigned. public static void int age.
+It means if student s = new student() and then s.age=5. but if its static we can directly write
+student.age . That means we no need to assign an object.
+So in static we can access variables without creating the object of the class.
+Important:Always create a global variable of button as global variable but dont write their the viewbyid.
+Viewbyid can be used in onCreate after setContenView as since here the xml file is called. so at here you can give the value to initialised value to the button using view by id.
+but dont write :'TextView' textview= findViewbyid(R.id.---);  and just write: textview = findViewbyid(R.id.---); in onCreate method. and Textview textview on as global variable.
+If you are making fragment type file in java section of main app then its xml file is also made. check more about fragments and its use.
+
+
+

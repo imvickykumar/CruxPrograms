@@ -1,0 +1,15 @@
+Lecture 3:
+upto video 00009 done:
+
+Intent is a messaging object you can use to request an action from another app component.
+They can be used to start an activity or any services. for now we will learn for activity only.
+And ofcourse here we are doing an explicit intent i.e. going from one activity to another activity
+in the same app. so we had made two activity in our app(intent app).
+And if you don't mention your second activity in the manifest then the intent won't work
+and app crashes.
+In intent you can also pass the images as here we have passed the texts. But should not exceed more than 1mb file.
+Also here we wont use onDestroy to close the second activtiy instead we use finsih().
+
+now comes Implicit intent:
+
+

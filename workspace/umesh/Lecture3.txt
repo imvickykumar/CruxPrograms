@@ -1,0 +1,42 @@
+Lecture 3:
+upto video 00004 done.
+We cannot simply mute(append) strings. Since strings are immutable. so we use string builder in java.As in case for edittext.
+so that memory used is not wasted as chunk in edittext in android.
+so we use .toString() in edittext as "et.getText().toString()";
+For simplicity use xml names as camelcase way e.g. "etName" , "btnText" etc.
+and for java class name as "MainActivity" , "Result" etc.
+Dont confuse for "editable" is an object is used to append the string whereas "toString()" returns the value.
+An object is made in MainActivity java class for the button and we link that created button object with the
+xml button by using findViewById() where id for button is stated in xml file.
+In constraint layout always while you are dragging and dropping the buttons etc then just constraint it 
+otherwise it will show error in xml file. constraint it using the spring in design section of xml.
+Just control and click on the button in xml you will get  the classes related to button.
+If the methods shown as on "button." if they are bold then they are the button's method otherwise if not dark and bold then its of parent class methods.
+onClickListener() is not the class its a interface . so when you create the object for the onclicklistener
+you will always need to implement all its method first. So here for this.
+And yeah in that method which you have to implement for the onclick there you can write code for what action
+you want to perform on clicking the button.
+By making your new onclicklistener class implements view.oncliclistener also you can create object. see in lecture videos in 0001. so easily understood.
+Remember onclicklistener is part of the View class which is of itself around 26,000 lines of code,
+so it contains many internal classes and interfaces , of which onclicklistener is one of them.
+So there are many ways to implement the clicks. Now you know the best one also from this same video 001.
+Alt+Enter is for implementing the class it requires.
+To convert your code from java to kotlin see in video 002.Or go to code and click their is option to
+convert the java class into kotlin. Remember to keep open your mainActivity.java their that time.
+Ctrl+shift+minus will minify the codes.
+Understanding toast : Toast class has an static method makeText() where text is inflated and shown in UI.
+Here in toast we are using the context since context is bridge between the app and system resources. so it
+displays the text even without the xml.
+Context explanation: Context in toast is called by using "getBaseContext()", but we can also make or call context outside this as "Context ctx = this" where ctx is an object of Context and this is the object of the class where we are calling the context i.e. object of MainActivity class. And also if it runs without an 
+error then we find that MainActivity class is the instance of context or that activity class internally extends the context somehow. so when we write "this" it didn't showed any error.
+For more detail about taost and anonymous class see in the code , explained in the comments.
+Layout inflater service in the context is used to draw something on the screen.
+Toast application is for when there is no internet connection than we can use toast to show internet failure.
+Also all these things is not only limited to the button but can be used for textview and others also.
+Now Start of Intent:e.g dial and internet and https etc.
+Intent is a gateway to open activities of other app or your app . e.g like camera, calls, web, etc.
+If you are creating a secondActivity.java activity then you need to register it in the manifest, here i m 
+saying an activtiy  (since it extends the AppCompactActvity) and not the class. So just click alt and enter in the shaded portion of the secondAcvtivty and click in the option of register in manisfest, it will itself register in the manifest.
+So such all these android components must be defined in manifest. 
+Some other example of android components are Activity, Services, BroadcastReceiver and ContentProviders etc.
+
