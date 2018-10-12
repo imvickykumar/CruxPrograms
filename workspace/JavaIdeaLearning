@@ -1,0 +1,18 @@
+##In Project "MigratoryBirds"
+Now you know how to use 'Arrays.sort(arr);' directly without knowing the insertion sort or binary search.
+No need to go so deep if you already know how to use the shortcuts. <DEEP LEARNING>
+Similarly works for binary search and all using "Arrays.BinarySearch(arr,key)"; hoho; saves time and its efficient;
+
+
+##In Project "DayofTheProgrammer"
+You Know now about the Date class in java and how to print the dates "Syso(date.toString())"; wher date is object of the Date;
+
+And also you know to change the date formats:
+
+ String pattern = "dd.MM.yyyy";
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+        String date = simpleDateFormat.format(new Date());
+        System.out.println(date);
+
+
+Just change the pattern whatever that suits you;
