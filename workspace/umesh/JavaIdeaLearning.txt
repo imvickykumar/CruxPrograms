@@ -1,0 +1,224 @@
+##In Project "MigratoryBirds"
+Now you know how to use 'Arrays.sort(arr);' directly without knowing the insertion sort or binary search.
+No need to go so deep if you already know how to use the shortcuts. <DEEP LEARNING>
+Similarly works for binary search and all using "Arrays.BinarySearch(arr,key)"; hoho; saves time and its efficient;
+
+Code For Most Frequent Element In The Array;
+
+// CPP program to find the most frequent element 
+// in an array. 
+#include <bits/stdc++.h> 
+using namespace std; 
+  
+int mostFrequent(int arr[], int n) 
+{ 
+    // Sort the array 
+    sort(arr, arr + n); 
+  
+    // find the max frequency using linear traversal 
+    int max_count = 1, res = arr[0], curr_count = 1; 
+    for (int i = 1; i < n; i++) { 
+        if (arr[i] == arr[i - 1]) 
+            curr_count++; 
+        else { 
+            if (curr_count > max_count) { 
+                max_count = curr_count; 
+                res = arr[i - 1]; 
+            } 
+            curr_count = 1; 
+        } 
+    } 
+  
+    // If last element is most frequent 
+    if (curr_count > max_count) 
+    { 
+        max_count = curr_count; 
+        res = arr[n - 1]; 
+    } 
+  
+    return res; 
+} 
+  
+// driver program 
+int main() 
+{ 
+    int arr[] = { 1, 5, 2, 1, 3, 2, 1 }; 
+    int n = sizeof(arr) / sizeof(arr[0]); 
+    cout << mostFrequent(arr, n); 
+    return 0; 
+} 
+
+############################################################################################################################################################
+
+##In Project "DayofTheProgrammer"
+You Know now about the Date class in java and how to print the dates "Syso(date.toString())"; wher date is object of the Date;
+
+And also you know to change the date formats:
+
+ String pattern = "dd.MM.yyyy";
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+        String date = simpleDateFormat.format(new Date());
+        System.out.println(date);
+
+Just change the pattern whatever that suits you;
+
+###############################################################################################################################################################
+
+##In Project "DayOfTheProgrammer"
+Learned the type casting of string into integer and integer into string which does not work as simple as int and char;
+Syntax is as below:
+
+Convert using Integer.toString(int)
+Convert using String.valueOf(int);
+
+#############################################################################################################################################################
+
+
+##In Project ClassInsideFunction:
+Know you know what else you can call in the static function only;
+
+The code is as follows;::::
+
+package com.company;
+
+import java.util.ArrayList;
+import java.util.Stack;
+
+public class Main {
+    
+    //just checking what we can call inside a static function;
+    
+    public static void FunClass(){
+         class Linkedlists{
+            //just testing if class is possible inside a function;
+             Stack stack = new Stack();
+        }
+
+        ArrayList<Integer> arrayList = new ArrayList<>();
+	Arrays.sort(arr);
+	Arrays.BinarySearch(arr,key);
+    }
+
+    public static void main(String[] args) {
+	// write your code here
+    }
+}
+
+
+##############################################################################################################################################################
+
+
+##REVERSING THE NUMBER;
+
+int num = 1234, reversed = 0;
+
+        while(num != 0) {
+            int digit = num % 10;
+            reversed = reversed * 10 + digit;
+            num /= 10;
+        }
+
+        System.out.println("Reversed Number: " + reversed);
+
+
+
+###############################################################################################################################################################
+
+
+##REMOVING DUPLICATES FROM AN ARRAY AND RETURING THE NEW LENGTH OF THE ARRAY TO PRINT THE NEW MODIFIED PREVIOUS ARRAY;
+
+
+ int[] arr = new int[]{4,5,2,6,8,1,4,2,5,6,2,8};
+
+        Arrays.sort(arr);
+
+
+        System.out.println("Before removal of duplicates : Arrayy :-");
+
+        for (int i=0;i<arr.length;i++){
+            System.out.println(arr[i]);
+        }
+
+
+        System.out.println("After removing the duplicates : Array :-");
+
+        int[] temp=new int[arr.length];
+
+        int j=0;
+
+        for (int i=0;i<arr.length-1;i++){
+
+            if (arr[i]!=arr[i+1]) {
+                temp[j++] = arr[i];
+            }
+        }
+        temp[j++]=arr[arr.length-1];
+
+        for (int i=0;i<j;i++){
+            arr[i]=temp[i];
+        }
+
+        for (int i=0;i<j;i++){
+            System.out.println(arr[i]);
+        }
+
+
+
+##############################################################################################################################################################
+
+
+
+
+##BIGINTEGER IN JAVA
+
+Use Biginteger in Java
+BigInteger Class in Java. BigInteger class is used for mathematical operation which involves very big integer calculations that are outside the limit of all available primitive data types. For example factorial of 100 contains 158 digits in it so we can't store it in any primitive data type available.
+
+
+ static void factorial(int n)
+    {
+        // Initialize result
+        BigInteger f = new BigInteger("1"); // Or BigInteger.ONE
+
+        // Multiply f with 2, 3, ...N
+        for (int i = 2; i <= n; i++) {
+            f = f.multiply(BigInteger.valueOf(i));
+        }
+
+
+        System.out.println(f);
+    }
+
+
+
+##########################################################################################################################################################3
+
+
+
+##Long uses learning
+
+long l1 = 9999999999;  // this won't compile
+long l2 = 9999999999L; // this will work
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
